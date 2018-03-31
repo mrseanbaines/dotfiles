@@ -1,0 +1,25 @@
+[user]
+  name = Sean Baines
+  email = mrseanbaines@gmail.com
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[core]
+  editor = atom --wait
+[color]
+  ui = auto
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  rm-all = "!f(){\
+     git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+  }; f"
+[push]
+  default = current
