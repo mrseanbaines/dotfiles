@@ -23,3 +23,5 @@
   }; f"
 [push]
   default = current
+[fetch]
+  prune = true
