@@ -8,7 +8,7 @@
   required = true
 [core]
   editor = atom --wait
-	excludesfile = /Users/mrseanbaines/.gitignore_global
+  excludesfile = /Users/mrseanbaines/.gitignore_global
 [color]
   ui = auto
 [alias]
