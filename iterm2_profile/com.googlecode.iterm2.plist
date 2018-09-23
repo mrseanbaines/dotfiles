@@ -392,7 +392,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>166 69 228 332 0 0 1440 900 </string>
+	<string>166 78 228 332 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>383 266 445 77 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -400,7 +400,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>398 256 599 459 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>281 243 796 486 0 0 1440 877 </string>
+	<string>281 335 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
 	<string>246 503 260 56 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -425,10 +425,14 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.40392156862745099</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.43137254901960786</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -506,12 +510,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97647058823529409</real>
+				<real>0.98201137781143188</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.57647058823529407</real>
+				<real>0.66088336706161499</real>
 				<key>Red Component</key>
-				<real>0.74117647058823533</real>
+				<real>0.79141318798065186</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -1047,11 +1055,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.40392156862745099</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14913141730000001</real>
+				<real>0.43137254901960786</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
