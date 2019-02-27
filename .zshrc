@@ -115,3 +115,9 @@ alias gpom="git pull origin master"
 
 # ZSH
 alias reload="source ~/.zshrc"
+
+# Directory listing/traversal
+alias ls='ls -GFh'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
