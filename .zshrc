@@ -8,7 +8,9 @@ export ZSH="/Users/mrseanbaines/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
+
+DEFAULT_USER=$USER
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -95,29 +97,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Love Home Swap
-alias lhs="cd ~/projects/lovehomeswap"
-alias docker-up="cd ~/projects/lhs-env/local && docker-compose up -d"
-alias docker-monolith="docker exec -it local_monolith_1 bash"
-alias docker-customer="docker exec -it local_customer_1 bash"
-alias docker-property="docker exec -it local_property_1 bash"
-alias docker-xdebug-start="sudo ifconfig en0 alias 10.254.254.254 255.255.255.0"
-alias clean="rm -rf /tmp/AppContainer.* && rm -rf /tmp/config.* && rm -rf /tmp/cache/*"
-alias compile="cd ~/projects/lovehomeswap && clear && gulp && webpack"
-alias super="docker-up && docker-xdebug-start && compile && open https://luxe-local.lhsenv.com/"
-
 # Git
 alias gs="git status"
 alias gd="git diff"
 alias gds="git diff --staged"
-alias gp="git push -u"
+alias gpush="git push -u origin HEAD"
+alias gpull="git pull"
 alias gpom="git pull origin master"
+alias gcm="git commit -m"
+alias ga="git add"
 
 # ZSH
 alias reload="source ~/.zshrc"
 
-# Directory listing/traversal
-alias ls='ls -GFh'
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit
+promptinit
+prompt spaceship
