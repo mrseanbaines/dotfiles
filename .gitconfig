@@ -3,7 +3,7 @@
   email = mrseanbaines@gmail.com
 [core]
   editor = code --wait
-  excludesfile = /Users/mrseanbaines/.gitignore_global
+  excludesfile = ./.gitignore_global
 [alias]
   co = checkout
   ci = commit
