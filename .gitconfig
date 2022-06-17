@@ -3,7 +3,7 @@
   email = mrseanbaines@gmail.com
 [core]
   editor = code --wait
-  excludesfile = ./.gitignore_global
+	excludesfile = ~/.gitignore_global
 [alias]
   co = checkout
   ci = commit
@@ -20,3 +20,7 @@
   default = current
 [fetch]
   prune = true
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
