@@ -1,16 +1,17 @@
 # Logs and databases
-######################
+####################
 *.log
 *.sql
 *.sqlite
 
 # Generated files & folders
-######################
+###########################
 .DS_Store
 .DS_Store?
 .vscode
 .netlify
+.vercel
 
 # Dependency directories
-##########################
+########################
 node_modules
