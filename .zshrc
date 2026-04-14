@@ -120,7 +120,12 @@ alias reload="source ~/.zshrc"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias pn=pnpm
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# n (node)
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
+
+# local bins
+export PATH="$HOME/.local/bin:$PATH"
 
 duration=$((SECONDS - start))
 echo "ZSH config loaded in $duration seconds"
